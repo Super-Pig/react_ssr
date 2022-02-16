@@ -8,7 +8,7 @@ module.exports = {
     sassOptions: {
         includePaths: [path.resolve(__dirname, './node_modules/compass-mixins/lib')]
     },
-    assetPrefix: isProd ? 'https://cnd.xxxxx.com/hello_world' : '',
+    assetPrefix: isProd ? 'https://static.xhey.top/h5-ssr/hello_world' : '',
     webpack: (config, { webpack }) => {
         config.plugins.push(new webpack.DefinePlugin({
             __IS_ENV_PRODUCTION__: isProd,
